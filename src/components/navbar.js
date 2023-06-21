@@ -10,7 +10,7 @@ const Navbar = () => {
       <div style={linkContainerStyle}>
         <Link to="/" style={linkStyle}>Home</Link>
         <Link to="/cart" style={linkStyle}>Cart</Link>
-        <span className="cartCount">Cart items: {items.length}</span>
+        <span className="cartCount" style={linkStyleN}>Cart items: {items.length}</span>
       </div>
     </div>
   );
@@ -21,6 +21,7 @@ const navbarStyle = {
   justifyContent: "space-between",
   alignItems: "center",
   padding: "10px",
+  position:"fixed",
   backgroundColor:"lightblue",
   fontSize:"30px",
 };
@@ -31,6 +32,9 @@ const linkContainerStyle = {
 
 const linkStyle = {
   marginRight: "10px",
+};
+const linkStyleN = {
+  marginRight: "30px",
 };
 
 export default Navbar;
